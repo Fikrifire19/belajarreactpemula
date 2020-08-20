@@ -26,7 +26,7 @@ html {
 
 .container {
   width: 600px;
-  height: 600px;
+  height: 900px;
   background-color: #f2eecb;
   border-radius: 5px;
   padding: 32px;
@@ -123,7 +123,7 @@ html {
   font-family: "Homemade Apple", sans-serif;
   font-size: 24px;
 
-  border-bottom: 1 solid red;
+  border-bottom: 1px solid red;
 }
 
 .todo-text {
