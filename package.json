@@ -1,7 +1,7 @@
 {
   "name": "belajar-react-pemula",
   "version": "1.0.0",
-  "description": "Latihan membuat todo list dengan react",
+  "description": "latihan membuat todo lists dengan react",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
