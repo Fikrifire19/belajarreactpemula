@@ -29,7 +29,7 @@ const TodoList = () => {
     setTodos(addedTodo);
   };
 
-  const clearTodos = () => setTodos([]);
+  const clearTodos = () => !showAdd && setTodos([]);
   const [showAdd, setShowAdd] = useState(false);
 
   const showAddToggle = () => setShowAdd(!showAdd);
