@@ -18,7 +18,7 @@ const TodoForm = ({ addTodo, showAdd }) => {
       return;
     }
 
-    if (value.length < 20) {
+    if (value.length < 5) {
       alert("Teks Terlalu Pendek!");
       setValue("");
       return;

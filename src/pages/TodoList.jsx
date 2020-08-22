@@ -13,9 +13,13 @@ const TodoList = () => {
   ]);
 
   const addTodo = (value) => {
-    const addedTodo = [...todos, { text: value, isCompleted: false }];
+    if (todos.length < 10) {
+      const addedTodo = [...todos, { text: value, isCompleted: false }];
 
-    setTodos(addedTodo);
+      setTodos(addedTodo);
+    } else {
+      alert("Todos tidak boleh lebih dari 10!");
+    }
   };
 
   const completeTodo = (index) => {
