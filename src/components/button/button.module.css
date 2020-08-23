@@ -1,0 +1,18 @@
+.headerBtn {
+  font-size: 1.8rem;
+  font-family: "Bungee", sans-serif;
+
+  padding: 16px;
+  cursor: pointer;
+
+  background: unset;
+  border: unset;
+  outline: unset;
+}
+.clear {
+  color: red;
+}
+
+.add {
+  padding: 16px;
+}
