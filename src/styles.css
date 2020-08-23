@@ -24,23 +24,6 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.container {
-  width: 600px;
-  height: 900px;
-  background-color: #f2eecb;
-  border-radius: 5px;
-  padding: 32px;
-}
-
-.frame {
-  border: 1px solid #484848;
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 
 .add-form {
   display: flex;
