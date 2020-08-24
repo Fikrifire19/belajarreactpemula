@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-black-color: #484848;
+  --main-red-color: #e06262;
+}
+
 html {
   font-size: 10px;
 }
