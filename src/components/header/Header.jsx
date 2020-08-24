@@ -2,12 +2,14 @@
 import { jsx } from "@emotion/core";
 //import React from "react";
 import PropTypes from "prop-types";
+import { useTheme } from "emotion-theming";
 
 //import styles from "./header.module.css";
 import * as styles from "./header.styles";
 import Button from "../button/Button";
 
 const Header = ({ showAddToggle, showAdd, clearTodos }) => {
+  const theme = useTheme();
   return (
     <section css={styles.header}>
       {/*<button className="header-btn" onClick={showAddToggle}>
@@ -18,7 +20,7 @@ const Header = ({ showAddToggle, showAdd, clearTodos }) => {
         color="black"
         onClick={showAddToggle}
       />
-      <h1 css={styles.headerTitle}>Todo Lists</h1>
+      <h1 css={styles.headerTitle(theme)}>Todo Lists</h1>
       {/*<button className="header-btn clear" onClick={clearTodos}>
         Clear
       </button>*/}

@@ -6,10 +6,11 @@ export const header = () =>
     align-items: flex-start;
   `;
 
-export const headerTitle = () =>
+export const headerTitle = (theme) =>
   css`
     width: 54%;
     text-align: center;
+    color: ${theme.color.primary.black};
 
     font-size: 3.6rem;
     font-family: "Homemade Apple", sans-serif;
