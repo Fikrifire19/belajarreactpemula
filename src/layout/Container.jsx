@@ -1,20 +1,28 @@
 /** @jsx jsx */
-import { jsx } from "@emotion/core";
+import { jsx, css } from "@emotion/core";
 import PropTypes from "prop-types";
 
-const Container = ({ children, flexDirection, flexWrap, justifyContent, alignItems, alignContent}) => {
+const Container = ({
+  children,
+  flexDirection,
+  flexWrap,
+  justifyContent,
+  alignItems,
+  alignContent
+}) => {
   const containerStyles = css`
-  display: flex;
-  flex-direction: ${flexDirection};
-  flex-wrap: ${flexWrap};
-  justify-content: ${justifyContent};
-  align-items: ${alignItems};
-  align-content: ${alignContent};
+    display: flex;
+    flex-direction: ${flexDirection};
+    flex-wrap: ${flexWrap};
+    justify-content: ${justifyContent};
+    align-items: ${alignItems};
+    align-content: ${alignContent};
   `;
 
   return (
     <div className="flex-container" css={containerStyles}>
-    {children}</div>
+      {children}
+    </div>
   );
 };
 
@@ -24,7 +32,7 @@ Container.defaultProps = {
   justifyContent: "flex-start",
   alignItems: "stretch",
   alignContent: "stretch"
-}
+};
 
 Container.propTypes = {
   children: PropTypes.oneOfType([
@@ -37,11 +45,7 @@ Container.propTypes = {
     "column",
     "column-reverse"
   ]),
-  flexWrap: PropTypes.oneOf([
-    "nowrap",
-    "wrap",
-    "wrap-reverse"
-  ]),
+  flexWrap: PropTypes.oneOf(["nowrap", "wrap", "wrap-reverse"]),
   justifyContent: PropTypes.oneOf([
     "flex-start",
     "flex-end",
@@ -82,3 +86,5 @@ Container.propTypes = {
     "space-evenly"
   ])
 };
+
+export default Container;
