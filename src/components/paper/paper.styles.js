@@ -12,7 +12,7 @@ export const paper = ({ theme }) =>
 export const frame = ({ theme }) =>
   css`
     border: 1px solid ${theme.color.primary.black};
-    //height: 100%;
+    height: 100%;
 
     //display: flex;
     //flex-direction: column;
